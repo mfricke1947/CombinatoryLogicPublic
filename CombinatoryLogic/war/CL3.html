@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html>
+ <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="CombinatoryLogic.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>Reduction Paths</title>
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="combinatorylogic/combinatorylogic.nocache.js"></script>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body>
+
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+    <script type="text/javascript" language="javascript">
+   var Parameters = {
+ 
+  fParser: "combinatorylogic",
+  proof0: value="I (I x) ⇒ I x",
+  proof1: value="W W W ⇒ dummy",
+  proof2: value="K x (W W W) ⇒ x",
+  proof3: value="K x (W W W) ⇒ keep repeating K x (W W W)",
+
+
+};
+
+
+  </script>
+
+<div id="container">
+
+<h3>&nbsp;Reduction Paths</h3>
+
+<p> 
+With proof 1, I (I x) ⇒ I x, show that it can be reduced two different ways. 
+With proof 2, W W W ⇒ dummy, understand that the W W W can be reduced forever.
+With proofs 3 and 4, K x (W W W) ⇒ x and K x (W W W) ⇒ K x (W W W), 
+understand that the K x (W W W) reduces to a normal form under one reduction strategy
+(i.e. normal order (leftmost redex first or 'function' before 'arguments')). Whereas
+ it is non-terminating under a different strategy (i.e applicative order (some internal
+ redexes first or 'arguments' before 'function')). The system is set up not to permit
+ rewrites that do nothing so it will pass on rewriting K x (W W W) to K x (W W W).
+
+</p>
+
+
+<div id="menu"> </div>
+
+
+<div id="input"> </div>
+
+<div id="proof"> </div>
+
+
+
+<div id="journal" ></div>
+
+<div id="startButton" ></div> 
+
+<div id="buttons"></div>  
+  
+ </div>
+ 
+ 
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link type="text/css" rel="stylesheet" href="CombinatoryLogic.css">
+    <!--                                           -->
+    <title>Combinatory Logic Roll Your Own</title>
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="combinatorylogic/combinatorylogic.nocache.js"></script>
+  </head>
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           --> <body>
+    <!-- OPTIONAL: include this if you want history support --> <iframe src="javascript:''"
+      id="__gwt_historyFrame"
+      tabindex="-1"
+      style="position:absolute;width:0;height:0;border:0"></iframe>
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+    <script type="text/javascript" language="javascript">
+   var Parameters = {
+ 
+  fParser: "combinatorylogic",
+    fInputText: "<p>Here are some sample templates</p>"+
+          "<p> B x y z ⇒ x (y z)  (* compositor *)<br>"+
+          " C x y z ⇒ x z y             (* permutator*)<br>"+
+          " I x ⇒ x                          (* identificator *)<br>"+
+          " K x y ⇒ x                     (* cancellator *)<br>"+
+          " S x y z ⇒ x z (y z)       (* distributor *)<br>"+
+          " W x y ⇒ x y y             (* duplicator*)<br>"+
+          " Y f ⇒ f (Y f) (*Y the fixpoint combinator*)</p> <p> Just type, or cut and paste, in a formula, then an arrow ⇒, <br> then another formula. Select it all and Start from selection.  </p>",
+     
+     
+     
+
+
+
+
+
+  
+     
+     
+ 
+
+
+
+};
+
+
+  </script>
+    <div id="container">
+      <h3>Roll your own Combinatory Logic Reductions [5/5/18]</h3>
+      <div id="menu"> </div>
+      <div id="input"> </div>
+      <div id="proof"> </div>
+      <div id="journal"></div>
+      <div id="startButton"></div>
+      <div id="buttons"></div>
+    </div>
+  </body>
+</html>
